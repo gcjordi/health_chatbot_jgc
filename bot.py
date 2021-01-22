@@ -6,7 +6,6 @@ from sklearn.model_selection import train_test_split
 from sklearn import model_selection
 from sklearn.tree import export_graphviz
 import warnings
-import msvcrt
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 
@@ -97,5 +96,4 @@ def tree_to_code(tree, feature_names):
     recurse(0, 1)
 
 tree_to_code(clf,cols)
-msvcrt.getch()
 
